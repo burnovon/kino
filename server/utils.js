@@ -5,7 +5,7 @@ const fps = fs.promises;
 
 const dirPath = path.resolve(__dirname, '../temp');
 console.log(dirPath);
-const filePath = path.resolve(dirPath, 'call-center.json');
+const filePath = path.resolve(dirPath, 'sessions.json');
 
 const readData = async () => {
   if (!fs.existsSync(filePath)) {
