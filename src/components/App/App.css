@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import '~antd/dist/antd.css';
+
+/* COMMON */
+
+html {
+	font-family: 'Montserrat', sans-serif;
+	box-sizing: border-box;
+}
+
+/* HEADER */
+
+.header {
+	height: 100px;
+	background-color: #193b6d;
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+	padding: 0 50px;
+}
+
+.title {
+	font-size: 30px;
+	margin: 0;
+	color: #f3d841;
+}
+
+.author {
+	font-size: 16px;
+	margin: 0;
+	color: #f3d841;
+	border: 1px solid #d8c036;
+	border-radius: 50px;
+	box-sizing: content-box;
+	padding: 10px;
+}
+
+/* MAIN */
+
+.main {
+	background-color: #2c4e81;
+	padding: 50px 100px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 230px);
+	justify-content: center;
+	gap: 70px;
+	min-height: calc(100vh - 100px);
+}
+
+/* FORM */
+
+.form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+	width: 200px;
+	height: 160px;
+	border: 1px solid #112749;
+	border-radius: 10px;
+	background-color: #193b6d;
+}
+
+.input {
+	padding-left: 10px;
+	width: 100%;
+	border: 0;
+	border-radius: 5px;
+	height: 30px;
+	background-color: #8aabff;
+	color: #fafafa;
+	outline: none;
+}
+
+.input:focus {
+	background-color: #799fff;
+}
+
+.input::placeholder {
+	color: #fafafa;
+	opacity: .7;
+}
+
+.form-button {
+	margin-top: 10px;
+	width: 100%;
+	height: 30px;
+	border: 0;
+	border-radius: 15px;
+	background-color: #d8c036;
+	color: #193b6d;
+}
+
+/* SESSION */
+
+.session {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 30px;
+	width: 230px;
+	height: 200px;
+	border: 1px solid #112749;
+	border-radius: 10px;
+	background-color: #193b6d;
+}
+
+.delete-session {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 28px;
+	height: 28px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 5px;
+	background-color: #c5d5ff;
+}
+
+.session-name {
+	line-height: 30px;
+	font-size: 24px;
+	color: #f3d841;
+	margin: 0;
+}
+
+.session-time {
+	line-height: 30px;
+	font-size: 18px;
+	color: #f3e69a;
+	margin: 0;
+}
+
+.session-input {
+	height: 30px;
+	font-size: 20px;
+	background-color: #193b6d;
+	border: 1px solid #112749;
+	border-radius: 5px;
+	color: #fff7d2;
+	outline: none;
+}
+
+.session-button {
+	width: 100%;
+	height: 40px;
+	background-color: #d8c036;
+	border: 0;
+	border-radius: 20px;
+	color: #193b6d;
+	transition: .1s linear;
+}
+
+.session-button:hover {
+	background-color: #dfca53;
+	color: #193b6d;
+}
+
+.session-button:focus {
+	background-color: #d1b92f;
+	color: #193b6d;
+}
+
+.session-button:active {
+	background-color: #d1b92f;
+	color: #193b6d;
+}
+
+/* SCHEMA */
+
+.schema {
+	display: grid;
+	grid-template-columns: repeat(10, 20px);
+	grid-template-rows: repeat(10, 20px);
+	gap: 5px;
+}
+
+.place {
+	width: 20px;
+	height: 20px;
+	background-color: #c9cad8;
+}
+
+.place-free {
+	width: 20px;
+	height: 20px;
+	background-color: #3769b6;
+}
